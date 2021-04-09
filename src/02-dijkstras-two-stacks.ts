@@ -1,5 +1,7 @@
 // Implementation of Djikstras Two Stack implementation
-// Evaluates an expression
+// Evaluates an expression like ((a+b)*((c*d)+e))
+// Important is that only two values and an operator
+// are in between a single brace
 
 class Calculator {
   operantsStack: string[] = [];
