@@ -1,5 +1,11 @@
 type CompareFunction<T> = (a: T, b: T) => number;
 
+/**
+ * The algorithm sorts in O(N^2/2) time
+ * @param array 
+ * @param compareFn 
+ * @returns 
+ */
 export function selectionSort<T>(array: T[], compareFn: CompareFunction<T>): T[] {
   const sortArray = [...array];
   const length = sortArray.length;

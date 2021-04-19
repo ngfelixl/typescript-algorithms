@@ -5,7 +5,7 @@
 
 class Calculator {
   operantsStack: string[] = [];
-  anna: number[] = [];
+  valueStack: number[] = [];
 
   evaluate(expression: string): number {
     for (const char of expression) {
@@ -16,18 +16,18 @@ class Calculator {
         this.operantsStack.push('*');
       } else if (char === ')') {
         const operant = this.operantsStack.pop();
-        this.anna.push(operant === '+'
-          ? this.anna.pop() + this.anna.pop()
-          : this.anna.pop() * this.anna.pop())
+        this.valueStack.push(operant === '+'
+          ? this.valueStack.pop() + this.valueStack.pop()
+          : this.valueStack.pop() * this.valueStack.pop())
       } else {
         const numberChar = Number(char);
         if (isNaN(numberChar)) {
           continue;
         }
-        this.anna.push(numberChar);
+        this.valueStack.push(numberChar);
       }
     }
-    return this.anna.pop()
+    return this.valueStack.pop()
   }
 }
 
