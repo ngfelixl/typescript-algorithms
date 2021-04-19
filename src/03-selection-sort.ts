@@ -1,6 +1,6 @@
 type CompareFunction<T> = (a: T, b: T) => number;
 
-function selectionSort<T>(array: T[], compareFn: CompareFunction<T>): T[] {
+export function selectionSort<T>(array: T[], compareFn: CompareFunction<T>): T[] {
   const sortArray = [...array];
   const length = sortArray.length;
 
