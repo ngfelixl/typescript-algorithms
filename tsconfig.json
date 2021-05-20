@@ -1,13 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Node 14",
- 
   "compilerOptions": {
     "lib": ["es2020", "DOM"],
     "module": "commonjs",
     "target": "es2020",
     "outDir": "dist",
- 
     "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
