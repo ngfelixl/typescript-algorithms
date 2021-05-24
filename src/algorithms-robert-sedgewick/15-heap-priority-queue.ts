@@ -37,7 +37,7 @@ export class MaxPriorityQueue<T> {
     while(index > 1 && this.less(Math.floor(index / 2), index)) {
       this.exchange(Math.floor(index / 2), index);
       index = Math.floor(index / 2);
-    } 
+    }
   }
 
   private sink(index: number) {
