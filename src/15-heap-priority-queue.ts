@@ -2,8 +2,8 @@
  * Related book: Algorithms, Robert Sedgewick
  * 2021/05/21
  */
-class MaxPriorityQueue<T> {
-  private priorityQueue: T[];
+export class MaxPriorityQueue<T> {
+  private priorityQueue: T[] = [];
   private n = 0;
 
   constructor(private compareFn: (that: T, to: T) => number) {}
