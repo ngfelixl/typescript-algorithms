@@ -53,7 +53,15 @@ export function numberToEnglishString(num: number): string {
 
   while(temp > 0) {
     const hundreds = temp % 1000;
-    finalString = `${getHundredsString(hundreds)} ${thousandsStrings[loopCount]} ${finalString}`;
+    const hundredsString = getHundredsString(hundreds);
+    const thousandsString = thousandsStrings[loopCount];
+
+    if (hundredsString && thousandsString) {
+      finalString = finalString ? `${thousandsString} ${finalString}` : thousandsString;
+    }
+    if (hundredsString) {
+      finalString = finalString ? `${hundredsString} ${finalString}` : hundredsString;
+    }
     temp = Math.floor(temp / 1000);
     loopCount++;
   }
@@ -77,13 +85,12 @@ function getTenthString(num: number): string {
   } else if (num >= 20 && num < 100) {
     const tenth = Math.floor(num/10);
     const onth = num % 10;
-    return `${tenthStrings[tenth - 2]} ${basicStrings[onth]}`;
+    const tenthString = tenthStrings[tenth - 2];
+    const basicString = basicStrings[onth];
+    if (basicString) {
+      return `${tenthString} ${basicString}`;
+    }
+    return tenthString;
   }
   return '';
 }
-
-console.log(123, numberToEnglishString(123));
-console.log(492748278, numberToEnglishString(492748278));
-console.log(3, numberToEnglishString(3));
-console.log(19823, numberToEnglishString(19823));
-console.log(2000, numberToEnglishString(2000));
