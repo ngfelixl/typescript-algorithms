@@ -3,19 +3,7 @@
  * 2021/05/21
  */
 
-const synonyms: [string, string][] = [
-  ['Jon', 'John'], ['John', 'Johnny'], ['Chris', 'Kris'], ['Chris', 'Christopher']
-];
-
-const names = {
-  'John': 15,
-  'Jon': 12,
-  'Chris': 13,
-  'Kris': 4,
-  'Christopher': 19
-};
-
-function getNameCountWithSynonyms(names: {[name: string]: number}, synonyms: [string, string][]) {
+export function getNameCountWithSynonyms(names: {[name: string]: number}, synonyms: [string, string][]) {
   const groupedSynonyms = groupSynonyms(synonyms);
 
   return groupedSynonyms.map(group => ({
@@ -35,5 +23,3 @@ function groupSynonyms(synonyms: [string, string][]): Set<string>[] {
     }
   }, [] as Set<string>[]);
 }
-
-console.log(getNameCountWithSynonyms(names, synonyms));
