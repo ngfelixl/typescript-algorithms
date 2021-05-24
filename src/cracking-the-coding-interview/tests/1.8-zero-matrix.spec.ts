@@ -1,4 +1,4 @@
-import { zeroMatrix } from '../17-zero-matrix';
+import { zeroMatrix } from '../1.8-zero-matrix';
 
 describe('zeroMatrix', () => {
   it('should zeroify a matrix correctly', () => {

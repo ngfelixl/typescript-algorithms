@@ -1,4 +1,4 @@
-import { numberToEnglishString } from '../11-number-to-english-string';
+import { numberToEnglishString } from '../16.8-number-to-english-string';
 
 describe('numberToEnglishString', () => {
   it('should print "one hundred twenty six" for 126', () => {

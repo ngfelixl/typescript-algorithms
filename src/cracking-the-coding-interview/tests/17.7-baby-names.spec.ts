@@ -1,4 +1,4 @@
-import { getNameCountWithSynonyms } from '../16-baby-names';
+import { getNameCountWithSynonyms } from '../17.7-baby-names';
 
 const synonyms: [string, string][] = [
   ['Jon', 'John'], ['John', 'Johnny'], ['Chris', 'Kris'], ['Chris', 'Christopher']
