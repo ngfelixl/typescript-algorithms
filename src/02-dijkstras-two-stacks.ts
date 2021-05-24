@@ -3,7 +3,7 @@
 // Important is that only two values and an operator
 // are in between a single brace
 
-class Calculator {
+export class Calculator {
   operantsStack: string[] = [];
   valueStack: number[] = [];
 
@@ -30,8 +30,3 @@ class Calculator {
     return this.valueStack.pop()
   }
 }
-
-
-const calculator = new Calculator();
-const val = calculator.evaluate('((1+2)+((5*4)+(1+1)))');
-console.log(val);
