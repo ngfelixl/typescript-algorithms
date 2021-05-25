@@ -30,10 +30,11 @@ npm run test -- --watchAll
 
 Algorithms; Robert Sedgewick
 
+- Shuffling
 - Selection Sort
 - Insertion Sort
 - Shell Sort
-- Shuffling
+- Merge Sort (Top-Down and Bottom-Up)
 - Heap Priority Queue
 
 Cracking the Coding Interview; Gayle Laakmann McDowell
