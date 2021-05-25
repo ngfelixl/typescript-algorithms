@@ -2,7 +2,13 @@
 
 This repository contains solutions and tests for algorithms written in TypeScript. I've implemented most of the
 algorithms myself without copy and pasting the solution. Therefore I do not guarantee correctness. To minimize implementation
-issues there are unit tests for most of the algorithms. Currently the algorithms focus on two books:
+issues there are unit tests for most of the algorithms. The purpose of this repository is to train my abstraction
+and problem-solving skills and to learn more about computer fundamentals. You can use this repository, especially the
+unit tests, to train your own problem solving skills. The algorithms are mostly written as functions. To implement
+a solution yourself, just delete the functions content and run the test suite in watch mode as described below. As you
+implement solutions the tests should turn green.
+
+Currently the algorithms focus on two books:
 
 - **Algorithms; Robert Sedgewick**
 - **Cracking the Coding Interview; Gayle Laakmann McDowell**
