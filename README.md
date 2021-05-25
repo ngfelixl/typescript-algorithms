@@ -1,10 +1,14 @@
 # Algorithms in TypeScript
 
-This repository contains solutions and tests for algorithms written in TypeScript. Currently the algorithms focus
-on two books:
+This repository contains solutions and tests for algorithms written in TypeScript. I've implemented most of the
+algorithms myself without copy and pasting the solution. Therefore I do not guarantee correctness. To minimize implementation
+issues there are unit tests for most of the algorithms. Currently the algorithms focus on two books:
 
-- Algorithms; Robert Sedgewick
-- Cracking the Coding Interview; Gayle Laakmann McDowell
+- **Algorithms; Robert Sedgewick**
+- **Cracking the Coding Interview; Gayle Laakmann McDowell**
+
+While the "Algorithms" book focuses more on data structures, their implementation and explanation, "Cracking the
+Coding Interview" contains more (tough) day-to-day problems, for which you need to apply the correct data structures.
 
 ## Getting started
 
