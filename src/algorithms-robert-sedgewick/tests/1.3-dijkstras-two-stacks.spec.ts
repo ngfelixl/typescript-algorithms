@@ -1,4 +1,4 @@
-import { Calculator } from '../02-dijkstras-two-stacks';
+import { Calculator } from '../1.3-dijkstras-two-stacks';
 
 describe('Dijkstras Two Stacks', () => {
   let calculator: Calculator;

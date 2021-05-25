@@ -1,4 +1,4 @@
-import { MaxPriorityQueue } from '../15-heap-priority-queue';
+import { MaxPriorityQueue } from '../2.4-heap-priority-queue';
 
 interface PriorityObject {
   priority: number;

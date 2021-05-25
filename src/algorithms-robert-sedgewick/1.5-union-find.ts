@@ -1,3 +1,6 @@
+/**
+ * Unweighted union find implementation p. 221, Algorithms
+ */
 class Unifier {
   unionGroups = new Set<Set<number>>();
 
