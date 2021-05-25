@@ -2,6 +2,13 @@ type CompareFunction<T> = (a: T, b: T) => number;
 
 /**
  * The algorithm runs in ~1/4 N^2
+ * It is part of the Algorithms book by Robert Sedgewick in Chapter 2.1
+ * 
+ * Expected API for the tests:
+ * 
+ * ```typescript
+ * export function insertionSort<T>(array: T[], compareFn: (a, b) => number): T[]
+ * ```
  * @param array 
  * @param compareFn 
  * @returns 
@@ -22,8 +29,3 @@ export function insertionSort<T>(array: T[], compareFn: CompareFunction<T>, h = 
 
   return sortedArray;
 }
-
-const data = [0, 5, 178, 40, 389, 1, 3, 10, 40, 50];
-function compareFn(a: number, b: number) { return b - a; }
-
-console.log(insertionSort(data, compareFn));

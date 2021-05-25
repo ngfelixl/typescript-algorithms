@@ -1,7 +1,14 @@
 type CompareFunction<T> = (a: T, b: T) => number;
 
 /**
- * The algorithm sorts in O(N^2/2) time
+ * The algorithm sorts in O(N^2/2) time.
+ * It is part of the Algorithms book by Robert Sedgewick in Chapter 2.1
+ * 
+ * Expected API for the tests:
+ * 
+ * ```typescript
+ * export function selectionSort<T>(array: T[], compareFn: (a, b) => number): T[]
+ * ```
  * @param array 
  * @param compareFn 
  * @returns 
@@ -19,9 +26,3 @@ export function selectionSort<T>(array: T[], compareFn: CompareFunction<T>): T[]
   }
   return sortArray;
 }
-
-
-const data = [0, 5, 178, 40, 389, 1, 3, 10, 40, 50];
-function compareFn(a: number, b: number) { return b - a }
-
-console.log(selectionSort(data, compareFn));
