@@ -35,6 +35,7 @@ Algorithms; Robert Sedgewick
 - Insertion Sort
 - Shell Sort
 - Merge Sort (Top-Down and Bottom-Up)
+- Quick Sort
 - Heap Priority Queue
 
 Cracking the Coding Interview; Gayle Laakmann McDowell
