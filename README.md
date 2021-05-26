@@ -53,4 +53,6 @@ Cracking the Coding Interview; Gayle Laakmann McDowell
 - Zero Matrix
 - String Rotation
 - Number to English words
+- Langtons Ant (no tests)
+- Calculator
 - Baby Name Synonyms
