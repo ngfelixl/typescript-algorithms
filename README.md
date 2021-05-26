@@ -52,6 +52,7 @@ Cracking the Coding Interview; Gayle Laakmann McDowell
 
 - Zero Matrix
 - String Rotation
+- Iterative Fibonacci
 - Number to English words
 - Langtons Ant (no tests)
 - Calculator

@@ -1,6 +1,6 @@
 import { calculate } from '../16.26-calculator';
 
-describe.only('Calculator', () => {
+describe('Calculator', () => {
   it('should evaluate the expression "2*3+5/6*3+15" correctly to 23.5', () => {
     const expression = '2*3+5/6*3+15';
 
