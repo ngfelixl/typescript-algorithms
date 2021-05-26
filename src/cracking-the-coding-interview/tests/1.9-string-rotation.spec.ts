@@ -7,8 +7,8 @@ describe('String Rotation', () => {
     expect(isRotation).toBe(true);
   });
 
-  it('should be true if "waterbottle" and "waterbottle" are given', () => {
-    const isRotation = containsRotation('waterbottle', 'waterbottle');
+  it('should be true if "cows" and "cows" are given', () => {
+    const isRotation = containsRotation('cows', 'cows');
     
     expect(isRotation).toBe(true);
   });
